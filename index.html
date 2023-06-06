@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sandwich Order Form</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sandwich Order Form</h2>
+    <form>
+      <!-- Section 1: Sandwich Name -->
+      <div class="form-group">
+        <label for="sandwichName">Sandwich Name:</label>
+        <input type="text" class="form-control" id="sandwichName" placeholder="Enter sandwich name">
+      </div>
+      
+      <!-- Section 2: Base Bread -->
+      <div class="form-group">
+        <label for="baseBread">Base Bread:</label>
+        <select class="form-control" id="baseBread">
+          <option>White Bread</option>
+          <option>Wheat Bread</option>
+          <option>Multi-grain Bread</option>
+        </select>
+      </div>
+      
+      <!-- Section 3: Toppings -->
+      <div class="form-group">
+        <label>Toppings:</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="topping1" value="Topping 1">
+          <label class="form-check-label" for="topping1">Topping 1</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="topping2" value="Topping 2">
+          <label class="form-check-label" for="topping2">Topping 2</label>
+        </div>
+        <!-- Add more toppings checkboxes here -->
+      </div>
+      
+      <!-- Section 4: Sauces -->
+      <div class="form-group">
+        <label>Sauces:</label>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="sauce1" value="Sauce 1">
+          <label class="form-check-label" for="sauce1">Sauce 1</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="sauce2" value="Sauce 2">
+          <label class="form-check-label" for="sauce2">Sauce 2</label>
+        </div>
+        <!-- Add more sauce checkboxes here -->
+      </div>
+      
+      <!-- Cost Display -->
+      <div id="costDisplay">
+        <strong>Total Cost:</strong> $<span id="totalCost">0.00</span>
+      </div>
+      
+      <!-- Submit Button -->
+      <button type="button" class="btn btn-primary">Make Sandwich</button>
+    </form>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
